@@ -25,6 +25,12 @@ const Weather = ({ city }) => {
   const feelsLike = Math.round(main.feels_like);
   const humidity = main.humidity;
 
+  const getWeatherIcon = (temp) => {
+    if (temp <= 20) return '❄️'; // קר
+    if (temp <= 30) return '😊'; // נעים
+    return '🔥'; // חם
+  };
+
   return (
     <div className="weather-card">
       <h2>{name}</h2>
@@ -32,7 +38,7 @@ const Weather = ({ city }) => {
       <p> {temp}°C :טמפ' נמדדת </p>
       <p> {feelsLike}°C :טמפ' מורגשת </p>
       <p>אחוזי לחות: {humidity}%</p>
-   
+      <div className="weather-icon">{getWeatherIcon(feelsLike)}</div>
     </div>
   );
 };

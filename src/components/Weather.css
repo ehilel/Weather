@@ -15,5 +15,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  
+  .weather-icon {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
   
