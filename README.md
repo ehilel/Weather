@@ -1,8 +1,19 @@
-# React + Vite
+אתר מזג אוויר
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+אתר המציג את מזג האוויר בארבעה מקומות שונים בעולם: אילת, לונדון, ניו יורק, אלסקה. 
 
-Currently, two official plugins are available:
+בכל אחת מהכרטסיות מוצג:
+- שם המקום (name)
+- תיאור מזג האוויר במילים (description)
+- הטמפרטורה (temp)
+- הטמפרטורה המורגשת(feels_like)
+- אחוזי הלחות (humidity)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+המעלות מוצגות בצלזיוס, והשפה היא עברית. 
+
+בכל כרטיסייה יהיה מוצג גם אייקון בהתאם לטמפ' המורגשת:
+
+20 מעלות צלזיוס ומטה (קר), בין 20 ל-30 מעלות צלזיוס (נעים), 30 מעלות צלזיוס ומעלה (חם).
+
+
+![image](https://github.com/user-attachments/assets/97c07361-410e-4265-8f11-2a7f4e793025)
